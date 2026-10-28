@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incidents Details | ResolveFlow </title>
+    <link rel="stylesheet" href="CSS/style.css">
+    
+</head>
+<body class="incident-details-page">
+    <header>
+        <nav>
+            <a href="index.html">ResolveFlow</a>
+            <ul>
+                <li><a href="dashboard.html"> Dashboard</a></li>
+                <li><a href="incidents.html">Incidents</a></li>
+                <li><a href="profile.html"> Profile</a></li>
+            </ul>
+            <div>
+                <a href="login.html"> Logout</a>
+            </div>
+        </nav>
+    </header>
+    <main class="incident-details-main">
+        <a href="incidents.html" class="details-back-link">
+            &larr;Back to All Incidents</a>
+<section class="details-page-heading">
+    <div>
+        <p class="details-incident-id">INC-1001</p>
+        <h1>Email Service unavailable</h1>
+        <p class="details-subtitle"> Reported on 24 October 2026</p>
+    </div>
+    <span class="status-open">Open</span>
+</section>
+<div class="incident-details-layout">
+    <section class="details-main-card">
+        <div class="details-section">
+            <h2>Incident Description</h2>
+            <p>
+                Employees are unable to send or receive emails.
+                The issue started this morning and is affecting normal business communication.
+            </p>
+        </div>
+        <div class="details-section">
+            <h2>Incident Information</h2>
+            <div class="details-info-grid">
+                <div>
+                    <span>Category</span>
+                    <strong>Email</strong>
+                </div>
+                <div>
+                    <span>Priority</span>
+                    <strong class="details-priority-high">High</strong>
+                </div>
+                <div>
+                    <span>Reported By</span>
+                    <strong>Alex Johnson</strong>
+                </div>
+                <div>
+                    <span>Department</span>
+                    <strong>Finance</strong>
+                </div>
+                <div>
+                    <span>Assigned Team</span>
+                    <strong>IT Support Team</strong>
+                </div>
+                <div>
+                    <span>Last Updated</span>
+                    <strong>24 October 2026</strong>
+                </div>
+            </div>
+        </div>
+        <div class="details-section">
+            <h2>SLA Information</h2>
+            <div class="sla-information">
+                <div>
+                    <span>SLA Response Target</span>
+                    <strong>1 Hour</strong>
+                </div>
+                <div>
+                    <span>SLA Resolution Target </span>
+                    <strong>4 Hour</strong>
+                </div>
+                <div>
+                    <span>Current SLA Status </span>
+                    <strong class="sla-pending">Pending</strong>
+                </div>
+            </div>
+           <p class="sla-note">
+            SLA values shown here are sample information.
+             </p>
+        </div>
+        <div class="details-section">
+            <h2>Avtivity Timeline </h2>
+            <div class="activity-timeline">
+                <div class="timeline-item">
+                    <span class="timeline-dot" ></span>
+                    <div>
+                        <h3>Incident Reported</h3>
+                        <p>Incident was submitted by the user.</p>
+                        <small>24 October 2026. 09:00 AM</small>
+                    </div>
+                </div>
+                <div class="timeline-items">
+                    <span class="timeline-dot"></span>
+                    <div>
+                        <h3>Awaiting Assignment</h3>
+                        <p>The incident is waiting for IT team action.</p>
+                        <small>24 October 2026 . 09:15AM</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <aside class="details-side-card">
+        <section class="details-side-card">
+        <h2>Incident Actions</h2>
+        <label for="update-status">Update Status</label>
+        <select id="update-status">
+            <option value="open">Open</option>
+            <option value="in-progress">In Progress</option>
+            <option value="resolved"> Resolved</option>
+        </select>
+        <button type="button" class="details-update-btn"> Update Status</button>
+        <p class="details-action-note">
+            Status updates will be connected to the backend later.
+        </p>
+        </section>
+        <section class="details-side-card">
+            <h2>Quick Links</h2>
+            <a href="create-incident.html" class="details-quick-link">+ Create New Incident</a>
+            <a href="incidents.html" class="details-quick-link">View All Incidents</a>
+            <a href="dashboard.html" class="details-quick-link">Back to Dashboard</a>
+        </section>
+    </aside>
+</div>
+    </main>
+    <footer>
+        <p> &copy: 2026 ResolveFlow. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incidents | ResolveFlow</title>
+    <link rel="stylesheet" href=" Css/style.css">
+</head>
+<body class="incidents-page">
+
+    <header>
+        <nav>
+            <a href="index.html">ResolveFlow</a>
+
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="incidents.html">Incidents</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+
+            <div>
+                <a href="login.html">Logout</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="incidents-main">
+
+        <section class="incidents-page-heading">
+            <div>
+                <h1>All Incidents</h1>
+                <p>View and manage all reported IT issues.</p>
+            </div>
+
+            <a href="create-incident.html" class="incidents-create-btn">
+                + Create Incident
+            </a>
+        </section>
+
+        <section class="incidents-list-card">
+
+            <div class="incidents-toolbar">
+                <div class="incidents-search">
+                    <label for="incident-search">Search Incidents</label>
+                    <input
+                        type="search"
+                        id="incident-search"
+                        placeholder="Search by ID or title..."
+                    >
+                </div>
+
+                <div class="incidents-filter">
+                    <label for="status-filter">Filter by Status</label>
+                    <select id="status-filter">
+                        <option value="all">All Statuses</option>
+                        <option value="open">Open</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="resolved">Resolved</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="incidents-table-wrapper">
+                <table class="incidents-table">
+                    <thead>
+                        <tr>
+                            <th>Incident ID</th>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                            <th>Reported Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>INC-1001</td>
+                            <td>Email service unavailable</td>
+                            <td>Email</td>
+                            <td><span class="priority-high">High</span></td>
+                            <td><span class="status-open">Open</span></td>
+                            <td>24 Oct 2026</td>
+                            <td><a href="incident-details.html">View</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>INC-1002</td>
+                            <td>Unable to access application</td>
+                            <td>Software</td>
+                            <td><span class="priority-medium">Medium</span></td>
+                            <td><span class="status-progress">In Progress</span></td>
+                            <td>23 Oct 2026</td>
+                            <td><a href="incident-details.html">View</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>INC-1003</td>
+                            <td>Printer connection issue</td>
+                            <td>Hardware</td>
+                            <td><span class="priority-low">Low</span></td>
+                            <td><span class="status-resolved">Resolved</span></td>
+                            <td>22 Oct 2026</td>
+                            <td><a href="incident-details.html">View</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>INC-1004</td>
+                            <td>System running slowly</td>
+                            <td>Network</td>
+                            <td><span class="priority-high">High</span></td>
+                            <td><span class="status-open">Open</span></td>
+                            <td>21 Oct 2026</td>
+                            <td><a href="incident-details.html">View</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>INC-1005</td>
+                            <td>Password reset request</td>
+                            <td>Access/Login</td>
+                            <td><span class="priority-medium">Medium</span></td>
+                            <td><span class="status-progress">In Progress</span></td>
+                            <td>20 Oct 2026</td>
+                            <td><a href="incident-details.html">View</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="incidents-note">
+                Showing sample incident records.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ResolveFlow. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
